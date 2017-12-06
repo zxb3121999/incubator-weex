@@ -23,6 +23,8 @@ import android.support.v7.widget.LinearLayoutManager;
 import android.support.v7.widget.RecyclerView;
 import android.support.v7.widget.StaggeredGridLayoutManager;
 
+import android.view.View;
+import com.taobao.weex.ui.view.listview.WXRecyclerView;
 import com.taobao.weex.utils.WXLogUtils;
 
 import java.lang.ref.WeakReference;
@@ -109,6 +111,12 @@ public class WXRecyclerViewOnScrollListener extends RecyclerView.OnScrollListene
             , mLastVisibleItemPosition
             , dx
             , dy);
+        View childAt = recyclerView.getChildAt(0);
+        if (childAt == null || (firstVisible == 0 && childAt.getTop() == 0)) {
+          ((WXRecyclerView)recyclerView).setTop(true);
+        } else {
+          ((WXRecyclerView)recyclerView).setTop(false);
+        }
       } else if (layoutManager instanceof GridLayoutManager) {
         layoutManagerType = LAYOUT_MANAGER_TYPE.GRID;
         GridLayoutManager gridLayoutManager = (GridLayoutManager) layoutManager;

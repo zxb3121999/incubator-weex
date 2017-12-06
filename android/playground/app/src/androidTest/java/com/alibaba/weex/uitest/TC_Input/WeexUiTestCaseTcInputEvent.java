@@ -30,7 +30,7 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.EditText;
 
-import com.alibaba.weex.R;
+import com.alibaba.zxb.R;
 import com.alibaba.weex.util.ScreenShot;
 import com.alibaba.weex.util.ViewUtil;
 import com.alibaba.weex.WXPageActivity;

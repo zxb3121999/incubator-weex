@@ -141,7 +141,7 @@ dependencies {
     provided "com.android.support:support-v4:${project.supportLibVersion}"
     provided "com.android.support:appcompat-v7:${project.supportLibVersion}"
     provided "com.alibaba:fastjson:${project.fastjsonLibVersion}"
-
+    compile 'com.android.support:design:23.1.1'
     testCompile "com.alibaba:fastjson:${project.fastjsonLibVersion}"
     testCompile 'junit:junit:4.12'
     testCompile 'org.hamcrest:hamcrest-core:1.3'

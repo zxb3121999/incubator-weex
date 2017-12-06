@@ -45,7 +45,7 @@ import android.view.WindowManager;
 import android.widget.TextView;
 import android.widget.Toast;
 
-import com.alibaba.weex.R;
+import com.alibaba.zxb.R;
 import com.alibaba.weex.WXPageActivity;
 import com.google.zxing.BarcodeFormat;
 import com.google.zxing.DecodeHintType;

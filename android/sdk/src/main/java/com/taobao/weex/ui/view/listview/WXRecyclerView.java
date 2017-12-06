@@ -95,7 +95,9 @@ public class WXRecyclerView extends RecyclerView implements WXGestureObservable 
     }
     return result;
   }
-
+  public void setTop(boolean top) {
+    this.isTop = top;
+  }
   private boolean isTop = false;
 
   public boolean isTop() {
